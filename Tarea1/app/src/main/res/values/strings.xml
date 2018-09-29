@@ -1,0 +1,33 @@
+<resources>
+
+    <string-array name="Libros">
+        <item>El Impostor</item>
+        <item>El Bosque de los Pigmeos</item>
+        <item>El Secreto</item>
+        <item>Diabolica</item>
+        <item>Captain Underpants</item>
+    </string-array>
+
+    <string-array name="Escolaridades">
+        <item>Bachillerato</item>
+        <item>Técnico</item>
+        <item>Licenciatura</item>
+        <item>Maestría</item>
+        <item>Doctorado</item>
+    </string-array>
+
+    <string name="app_name">Tarea 1</string>
+    <string name="activity_main_nombre">Ingrese su nombre</string>
+    <string name="activity_main_telefono">Ingrese su teléfono</string>
+    <string name="activity_main_escolaridad">Escolaridad</string>
+    <string name="activity_main_genero">Género</string>
+    <string name="activity_main_genero_f">Femenino</string>
+    <string name="activity_main_genero_m">Masculino</string>
+    <string name="activity_main_libro_f">Libro Favorito</string>
+    <string name="activity_main_deporte">Practica Deporte</string>
+    <string name="activity_main_btn_limpiar">Limpiar</string>
+    <string name="activity_main_texto_dialogo">¿Desea limpiar el registro?</string>
+    <string name="activity_main_texto_aceptar">Si</string>
+    <string name="activity_main_texto_cancelar">No</string>
+
+</resources>

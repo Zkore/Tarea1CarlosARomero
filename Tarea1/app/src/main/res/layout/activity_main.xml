@@ -6,19 +6,15 @@
     tools:context=".activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight=".9"
         android:orientation="vertical"
         android:paddingTop="@dimen/activity_main_padding_superior">
-
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -26,27 +22,22 @@
                 android:orientation="vertical"
                 tools:ignore="Suspicious0dp"
                 android:padding="@dimen/activity_main_padding_linear">
-
                 <EditText android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/activity_main_nombre"
-                    android:id="@+id/activity_main_name_editar_texto"/>
-
+                    android:id="@+id/activity_main_nombre_editar_texto"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/activity_main_telefono"
                     android:inputType="number"
                     android:id="@+id/activity_main_telefono_editar_texto"/>
-
                 <TextView android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/activity_main_escolaridad"/>
-
                 <Spinner android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/activity_main_escolaridad"/>
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -71,7 +62,6 @@
             android:text="@string/activity_main_genero_m"
             android:id="@+id/activity_main_genero_m"
             android:onClick="RbtnClicked"/>
-
     </RadioGroup>
                 <TextView android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -81,7 +71,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/activity_main_libro"/>
-
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -91,7 +80,6 @@
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="@dimen/activity_main_btn_altura"

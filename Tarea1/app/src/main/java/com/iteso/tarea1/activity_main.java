@@ -20,22 +20,25 @@ import android.widget.Toast;
 
 
 public class activity_main extends AppCompatActivity  implements AdapterView.OnItemSelectedListener{
-    public static String s_escolaridad;
-    EditText nombre, telefono;
-    Spinner escolaridad;
-    RadioGroup genero;
     AutoCompleteTextView libro;
     CheckBox deporte_chk;
-    String genero_persona = "Femenino", deporte = "No practica deporte";
+    String genero_persona = "Femenino";
+    String deporte = "No practica deporte";
+    public static String s_escolaridad;
+    EditText nombre;
+    EditText telefono;
+    Spinner escolaridad;
+    RadioGroup genero;
     Button limpiar;
-    RadioButton Femenino, Masculino;
+    RadioButton Femenino;
+    RadioButton Masculino;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Femenino = findViewById(R.id.activity_main_genero_f);
         Masculino = findViewById(R.id.activity_main_genero_m);
-        nombre = findViewById(R.id.activity_main_name_editar_texto);
+        nombre = findViewById(R.id.activity_main_nombre_editar_texto);
         telefono = findViewById(R.id.activity_main_telefono_editar_texto);
         escolaridad = findViewById(R.id.activity_main_escolaridad);
         genero = findViewById(R.id.activity_main_genero);

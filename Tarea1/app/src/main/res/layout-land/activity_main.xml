@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".activity_main">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
-        android:layout_weight="1"
+        android:layout_weight=".9"
         android:paddingTop="@dimen/activity_main_padding_superior">
 
         <ScrollView
@@ -20,7 +22,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight=".7"
+                android:layout_weight=".8"
                 android:orientation="vertical"
                 tools:ignore="Suspicious0dp"
                 android:padding="@dimen/activity_main_padding_linear">
@@ -29,62 +31,90 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/activity_main_nombre"
-                    android:id="@+id/activity_main_name_editar_texto"/>
+                    android:id="@+id/activity_main_name_edittext"/>
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/activity_main_telefono"
                     android:inputType="number"
-                    android:id="@+id/activity_main_phone_editar_texto"/>
+                    android:id="@+id/activity_main_telefono_editar_texto"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/activity_main_escolaridad"/>
-                <Spinner android:layout_width="match_parent"
+
+                <Spinner
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/activity_main_escolaridad">
+
                 </Spinner>
+
                 <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="@string/activity_main_genero"/>
-                <RadioGroup android:layout_width="match_parent"
-                    android:layout_height= "wrap_content"
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:id="@+id/activity_main_genero"/>
-                    <RadioButton android:layout_width="0dp"
+                    android:id="@+id/activity_main_genero">
+
+                    <RadioButton
+                        android:layout_width="0dp"
                         android:layout_weight=".5"
                         android:layout_height="wrap_content"
                         android:text="@string/activity_main_genero_f"
                         android:checked="true"
                         android:id="@+id/activity_main_female"
-                        android:onClick="RbtnClick"/>
-                <RadioButton
+                        android:onClick="RbtnClicked"/>
+
+                    <RadioButton
                         android:layout_width="0dp"
                         android:layout_weight=".5"
                         android:layout_height="wrap_content"
                         android:text="@string/activity_main_genero_m"
                         android:id="@+id/activity_main_male"
-                        android:onClick="RbtnClick"/>
-     <TextView
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:text="@string/activity_main_libro_f"/>
+                        android:onClick="RbtnClicked"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_main_libro_f"/>
+
                 <AutoCompleteTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/activity_main_book"/>
-                <CheckBox android:layout_width="wrap_content"
+                    android:id="@+id/activity_main_libro"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/activity_main_deporte"
-                    android:id="@+id/activity_main_sport"
-                    android:onClick="onCheckBoxClicked"/>
+                    android:id="@+id/activity_main_deporte"
+                    android:onClick="ChkClicked"/>
+
+
             </LinearLayout>
+
+
         </ScrollView>
+
+
+
+
     </LinearLayout>
-    <Button android:layout_width="match_parent"
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="@dimen/activity_main_btn_altura"
+        android:layout_weight=".1"
         android:text="@string/activity_main_btn_limpiar"
         tools:ignore="Suspicious0dp"
-        android:id="@+id/activity_main_clean"/>
+        android:id="@+id/activity_main_limpiar"/>
+
 </LinearLayout>

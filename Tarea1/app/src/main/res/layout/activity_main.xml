@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight=".9"
         android:orientation="vertical"
         android:paddingTop="@dimen/activity_main_padding_superior">
 
@@ -22,7 +22,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_weight=".9"
                 android:orientation="vertical"
                 tools:ignore="Suspicious0dp"
                 android:padding="@dimen/activity_main_padding_linear">
@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/activity_main_telefono"
                     android:inputType="number"
-                    android:id="@+id/activity_main_phone_editar_texto"/>
+                    android:id="@+id/activity_main_telefono_editar_texto"/>
 
                 <TextView android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -58,19 +58,19 @@
         android:id="@+id/activity_main_genero">
 
         <RadioButton android:layout_width="0dp"
-            android:layout_weight=".7"
+            android:layout_weight=".5"
             android:layout_height="wrap_content"
             android:text="@string/activity_main_genero_f"
             android:id="@+id/activity_main_genero_f"
             android:checked="true"
-            android:onClick="RbtnClick"/>
+            android:onClick="RbtnClicked"/>
 
         <RadioButton android:layout_width="0dp"
             android:layout_weight=".7"
             android:layout_height="wrap_content"
             android:text="@string/activity_main_genero_m"
             android:id="@+id/activity_main_genero_m"
-            android:onClick="RbtnClick"/>
+            android:onClick="RbtnClicked"/>
 
     </RadioGroup>
                 <TextView android:layout_width="wrap_content"
@@ -87,7 +87,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/activity_main_deporte"
                     android:id="@+id/activity_main_deporte"
-                    android:onClick="onCheckBoxClicked"/>
+                    android:onClick="ChkClicked"/>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
